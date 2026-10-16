@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberShield | Cyber Fraud Awareness Campaign</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav>
+
+<div class="logo">
+🛡️ Cyber<span>Shield</span>
+</div>
+
+<div class="nav-links">
+
+<button onclick="showSection('home')">
+Home
+</button>
+
+<button onclick="showSection('report')">
+Report Fraud
+</button>
+
+<button onclick="showSection('track')">
+Track
+</button>
+
+<button onclick="showSection('suspicious')">
+Suspicious Activity
+</button>
+
+<button onclick="showSection('awareness')">
+Awareness
+</button>
+
+<button onclick="showSection('safety')">
+Safety
+</button>
+
+<button onclick="showSection('feedback')">
+Feedback
+</button>
+
+<button onclick="openAdmin()">
+Admin
+</button>
+
+<select
+id="languageSelect"
+onchange="changeLanguage()"
+>
+
+<option value="en">English</option>
+
+<option value="hi">हिन्दी</option>
+
+<option value="mr">मराठी</option>
+
+<option value="bn">বাংলা</option>
+
+<option value="gu">ગુજરાતી</option>
+
+<option value="ta">தமிழ்</option>
+
+<option value="te">తెలుగు</option>
+
+<option value="kn">ಕನ್ನಡ</option>
+
+<option value="ml">മലയാളം</option>
+
+<option value="pa">ਪੰਜਾਬੀ</option>
+
+</select>
+
+</div>
+
+</nav>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section
+id="home"
+class="section active"
+>
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>
+Cyber Fraud
+<span>Awareness Campaign</span>
+</h1>
+
+<p>
+Learn how to protect yourself from cyber fraud,
+report suspicious activity and stay safe online.
+</p>
+
+<button
+class="btn primary"
+onclick="showSection('report')"
+>
+🚨 Report Cyber Fraud
+</button>
+
+<button
+class="btn danger"
+onclick="showSection('suspicious')"
+>
+⚠️ Report Suspicious Activity
+</button>
+
+</div>
+
+</div>
+
+
+<div class="section-title">
+
+<h2>
+Why Cyber Awareness Matters?
+</h2>
+
+<p>
+Stay alert. Stay informed. Stay safe.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">
+🎣
+</div>
+
+<h3>
+Phishing
+</h3>
+
+<p>
+Fake emails, messages and websites designed
+to steal personal information.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+💳
+</div>
+
+<h3>
+Payment Fraud
+</h3>
+
+<p>
+Fraud involving UPI, cards and unauthorized
+transactions.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+🔐
+</div>
+
+<h3>
+OTP Scam
+</h3>
+
+<p>
+Never share OTP, PIN, CVV or passwords.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+💼
+</div>
+
+<h3>
+Job Scam
+</h3>
+
+<p>
+Fake job offers asking for money or
+personal information.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     REPORT FRAUD
+========================= -->
+
+<section
+id="report"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+🚨 Report Cyber Fraud
+</h2>
+
+<p>
+Register a complaint in this project demo.
+</p>
+
+</div>
+
+
+<div class="alert warning">
+
+<b>Important:</b>
+
+This is an educational project demonstration.
+
+For a real cybercrime incident in India,
+use the official government reporting system.
+
+</div>
+
+
+<div class="form-box">
+
+<form id="complaintForm">
+
+
+<div class="form-grid">
+
+
+<div class="form-group">
+
+<label>
+Full Name *
+</label>
+
+<input
+id="name"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Mobile Number *
+</label>
+
+<input
+id="mobile"
+type="tel"
+maxlength="10"
+pattern="[0-9]{10}"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Email
+</label>
+
+<input
+id="email"
+type="email"
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Fraud Category *
+</label>
+
+<select
+id="category"
+required
+>
+
+<option value="">
+Select Category
+</option>
+
+<option>
+UPI / Payment Fraud
+</option>
+
+<option>
+Phishing
+</option>
+
+<option>
+OTP Scam
+</option>
+
+<option>
+Fake Customer Care
+</option>
+
+<option>
+Social Media Fraud
+</option>
+
+<option>
+Job Scam
+</option>
+
+<option>
+Investment Scam
+</option>
+
+<option>
+Online Shopping Fraud
+</option>
+
+<option>
+Identity Theft
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Date of Incident *
+</label>
+
+<input
+id="incidentDate"
+type="date"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Amount Involved ₹
+</label>
+
+<input
+id="amount"
+type="number"
+min="0"
+>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+Transaction / UPI Reference
+</label>
+
+<input
+id="transaction"
+>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+Complaint Description *
+</label>
+
+<textarea
+id="description"
+placeholder="Explain what happened..."
+required
+></textarea>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+Photo / Video Evidence
+</label>
+
+<input
+id="evidence"
+type="file"
+accept="image/*,video/*"
+multiple
+>
+
+<small>
+Demo only. File names are stored locally.
+Files are not uploaded to a server.
+</small>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+
+<input
+type="checkbox"
+required
+>
+
+I confirm that the information provided is correct.
+
+</label>
+
+</div>
+
+
+</div>
+
+
+<button
+class="btn primary"
+type="submit"
+>
+Submit Complaint
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TRACK COMPLAINT
+========================= -->
+
+<section
+id="track"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+🔎 Track Complaint
+</h2>
+
+<p>
+Check your complaint progress using your Complaint ID.
+</p>
+
+</div>
+
+
+<div class="form-box">
+
+<div class="form-group">
+
+<label>
+Complaint ID
+</label>
+
+<input
+id="trackId"
+placeholder="Example: CYB123456"
+>
+
+</div>
+
+<br>
+
+<button
+class="btn primary"
+onclick="trackComplaint()"
+>
+Track Complaint
+</button>
+
+</div>
+
+
+<div
+id="trackResult"
+class="result"
+>
+</div>
+
+</section>
+
+
+<!-- =========================
+     SUSPICIOUS ACTIVITY
+========================= -->
+
+<section
+id="suspicious"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+⚠️ Report Suspicious Activity
+</h2>
+
+<p>
+Report suspicious calls, messages, websites or payment requests.
+</p>
+
+</div>
+
+
+<div class="form-box">
+
+<form id="suspiciousForm">
+
+
+<div class="form-grid">
+
+
+<div class="form-group">
+
+<label>
+Your Name *
+</label>
+
+<input
+id="susName"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Activity Type *
+</label>
+
+<select
+id="susType"
+required
+>
+
+<option value="">
+Select Type
+</option>
+
+<option>
+Suspicious Phone Call
+</option>
+
+<option>
+Suspicious SMS
+</option>
+
+<option>
+Suspicious WhatsApp Message
+</option>
+
+<option>
+Suspicious Website
+</option>
+
+<option>
+Suspicious Social Media Account
+</option>
+
+<option>
+Suspicious Payment Request
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+Phone Number / URL / Account
+</label>
+
+<input
+id="susSource"
+>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+Details *
+</label>
+
+<textarea
+id="susDetails"
+required
+></textarea>
+
+</div>
+
+
+</div>
+
+
+<button
+class="btn danger"
+type="submit"
+>
+Submit Suspicious Report
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     AWARENESS
+========================= -->
+
+<section
+id="awareness"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+📚 Cyber Fraud Awareness
+</h2>
+
+<p>
+Learn about common cyber fraud methods.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+🎣 Phishing
+</h3>
+
+<p>
+Fraudsters may send fake links or messages
+that look legitimate.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+💰 UPI Fraud
+</h3>
+
+<p>
+Be careful with unexpected payment requests.
+Never share your UPI PIN.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+☎️ Fake Customer Care
+</h3>
+
+<p>
+Never give OTPs or passwords to unknown
+people claiming to be support staff.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+📈 Investment Scam
+</h3>
+
+<p>
+Be suspicious of guaranteed-profit offers
+and pressure to invest quickly.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+💼 Job Scam
+</h3>
+
+<p>
+Be careful if someone demands money
+before providing a job.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🛒 Shopping Fraud
+</h3>
+
+<p>
+Check sellers and website addresses
+before making payments.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SAFETY
+========================= -->
+
+<section
+id="safety"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+🛡️ Cyber Safety Tips
+</h2>
+
+<p>
+Simple habits can make your online activity safer.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+🔐 Strong Passwords
+</h3>
+
+<p>
+Use unique passwords for important accounts.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🔢 Never Share OTP
+</h3>
+
+<p>
+Never share OTP, PIN, CVV or passwords.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🔗 Check Links
+</h3>
+
+<p>
+Verify website addresses before entering information.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+📱 Update Devices
+</h3>
+
+<p>
+Keep your operating system and applications updated.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🔒 Enable 2FA
+</h3>
+
+<p>
+Use two-factor authentication whenever available.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🧠 Think Before Clicking
+</h3>
+
+<p>
+Don't act quickly because someone creates urgency.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FEEDBACK
+========================= -->
+
+<section
+id="feedback"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+⭐ Feedback & Rating
+</h2>
+
+<p>
+Help us improve the CyberShield campaign.
+</p>
+
+</div>
+
+
+<div class="form-box">
+
+<form id="feedbackForm">
+
+
+<div class="form-group">
+
+<label>
+Name *
+</label>
+
+<input
+id="feedbackName"
+required
+>
+
+</div>
+
+
+<br>
+
+
+<div class="form-group">
+
+<label>
+Rating *
+</label>
+
+<select
+id="rating"
+required
+>
+
+<option value="">
+Select Rating
+</option>
+
+<option value="5">
+⭐⭐⭐⭐⭐ Excellent
+</option>
+
+<option value="4">
+⭐⭐⭐⭐ Good
+</option>
+
+<option value="3">
+⭐⭐⭐ Average
+</option>
+
+<option value="2">
+⭐⭐ Poor
+</option>
+
+<option value="1">
+⭐ Very Poor
+</option>
+
+</select>
+
+</div>
+
+
+<br>
+
+
+<div class="form-group">
+
+<label>
+Feedback *
+</label>
+
+<textarea
+id="feedbackText"
+required
+></textarea>
+
+</div>
+
+
+<br>
+
+
+<button
+class="btn success"
+type="submit"
+>
+Submit Feedback
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ADMIN LOGIN
+========================= -->
+
+<section
+id="login"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+🔐 Admin Login
+</h2>
+
+<p>
+Login to manage complaints.
+</p>
+
+</div>
+
+
+<div class="form-box login-box">
+
+<form id="loginForm">
+
+
+<div class="form-group">
+
+<label>
+Admin Email
+</label>
+
+<input
+id="adminEmail"
+type="email"
+placeholder="admin@cybershield.com"
+required
+>
+
+</div>
+
+
+<br>
+
+
+<div class="form-group">
+
+<label>
+Password
+</label>
+
+
+<div class="password-wrap">
+
+<input
+id="adminPassword"
+type="password"
+placeholder="Enter password"
+required
+>
+
+<button
+type="button"
+class="show-password"
+onclick="togglePassword()"
+>
+👁️
+</button>
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<button
+class="btn primary"
+type="submit"
+>
+Login
+</button>
+
+
+</form>
+
+
+<div class="alert info">
+
+<b>Demo Admin Login</b>
+
+<br><br>
+
+Email:
+admin@cybershield.com
+
+<br>
+
+Password:
+Admin@123
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ADMIN DASHBOARD
+========================= -->
+
+<section
+id="dashboard"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+📊 Admin Dashboard
+</h2>
+
+<p>
+Manage complaints and view feedback.
+</p>
+
+</div>
+
+
+<div class="profile">
+
+<b>
+👨‍💼 CyberShield Administrator
+</b>
+
+
+<button
+class="btn danger"
+style="float:right"
+onclick="adminLogout()"
+>
+Logout
+</button>
+
+
+<div style="clear:both"></div>
+
+</div>
+
+
+<div class="stats">
+
+
+<div class="stat">
+
+<h2 id="totalCount">
+0
+</h2>
+
+<p>
+Total Complaints
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<h2 id="submittedCount">
+0
+</h2>
+
+<p>
+Submitted
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<h2 id="reviewCount">
+0
+</h2>
+
+<p>
+Under Review
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<h2 id="investigationCount">
+0
+</h2>
+
+<p>
+Investigation
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<h2 id="resolvedCount">
+0
+</h2>
+
+<p>
+Resolved
+</p>
+
+</div>
+
+
+</div>
+
+
+<h2 style="margin-bottom:15px;">
+📋 Complaint Management
+</h2>
+
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Category</th>
+
+<th>Date</th>
+
+<th>Status</th>
+
+<th>Change Status</th>
+
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+
+<tbody
+id="complaintTable"
+>
+</tbody>
+
+</table>
+
+</div>
+
+
+<br><br>
+
+
+<h2 style="margin-bottom:15px;">
+⭐ Feedback Received
+</h2>
+
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Rating</th>
+
+<th>Feedback</th>
+
+<th>Date</th>
+
+</tr>
+
+</thead>
+
+
+<tbody
+id="feedbackTable"
+>
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     OFFICIAL HELP
+========================= -->
+
+<section
+id="official"
+class="section"
+>
+
+<div class="section-title">
+
+<h2>
+🇮🇳 Official Cyber Crime Help
+</h2>
+
+<p>
+For real cybercrime incidents, use official government channels.
+</p>
+
+</div>
+
+
+<div class="form-box">
+
+
+<div class="alert danger-alert">
+
+<h3>
+🚨 Financial Cyber Fraud
+</h3>
+
+<p>
+If you experience financial cyber fraud,
+report it through official channels as soon as possible.
+</p>
+
+</div>
+
+
+<h3>
+National Cyber Crime Reporting Portal
+</h3>
+
+<br>
+
+
+<a
+href="https://www.cybercrime.gov.in/"
+target="_blank"
+>
+
+<button
+class="btn primary"
+>
+Open Official Portal
+</button>
+
+</a>
+
+
+<hr style="margin:25px 0">
+
+
+<h3>
+Cyber Crime Helpline
+</h3>
+
+<br>
+
+<h2>
+1930
+</h2>
+
+<br>
+
+<p>
+Always verify current information through official government sources.
+</p>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<h2>
+🛡️ CyberShield
+</h2>
+
+<p>
+Cyber Fraud Awareness Campaign
+</p>
+
+<p>
+Educational college project — not an official government portal.
+</p>
+
+<p>
+
+<a
+href="https://www.cybercrime.gov.in/"
+target="_blank"
+>
+Official Cyber Crime Reporting Portal
+</a>
+
+</p>
+
+<p>
+© 2026 CyberShield
+</p>
+
+</footer>
+
+
+<!-- =========================
+     COMPLAINT MODAL
+========================= -->
+
+<div
+id="complaintModal"
+class="modal"
+>
+
+<div class="modal-box">
+
+<h2>
+✅ Complaint Submitted
+</h2>
+
+<br>
+
+<p>
+Your Complaint ID is:
+</p>
+
+
+<div
+class="complaint-id"
+id="generatedId"
+>
+</div>
+
+
+<p>
+Please save this ID to track your complaint.
+</p>
+
+
+<br>
+
+
+<button
+class="btn primary"
+onclick="closeModal()"
+>
+Continue
+</button>
+
+</div>
+
+</div>
+
+
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
